@@ -1,0 +1,46 @@
+.summary-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(5, 8, 15, 0.8), #05080f 70%);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid #1f2937;
+  padding: 0.75rem 0;
+  margin-top: 1rem;
+}
+
+.summary-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.summary-chip {
+  background: #0b1221;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  border-radius: 999px;
+  padding: 0.65rem 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.summary-chip strong {
+  color: #f8fafc;
+}
+
+.summary-chip.total {
+  background: linear-gradient(135deg, #10b981, #0ea5e9);
+  color: #04100a;
+  border: none;
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.35);
+}
+
+.summary-chip.subtle {
+  background: #0f172a;
+  border-color: #1f2937;
+  color: #cbd5e1;
+}
